@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../Css/login.css";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css'
 import Logo from "../img/amazon.png";
 // import { useHistory } from "react-router";
 import { NavLink, useHistory } from "react-router-dom";
@@ -36,15 +38,15 @@ const Login = () => {
     });
   };
 
-  const notify = (mssg) => {
-    toast.error(mssg, { position: toast.POSITION.TOP_CENTER });
-  };
-  const notify1 = (mssg) => {
-    toast.success(mssg, {
-      position: toast.POSITION.TOP_CENTER,
-      autoClose: 5000,
-    });
-  };
+//   const notify = (mssg) => {
+//     toast.error(mssg, { position: toast.POSITION.TOP_CENTER });
+//   };
+//   const notify1 = (mssg) => {
+//     toast.success(mssg, {
+//       position: toast.POSITION.TOP_CENTER,
+//       autoClose: 5000,
+//     });
+//   };
 //   const send = async (e) => {
 //     const response= await fetch(`http://localhost:5000/api/auth/login`,{
 //       method:"POST",
@@ -67,7 +69,10 @@ const Login = () => {
 
     try{
          const {email,username,password,confirmpassword}=req.body;
-         if(password===confirmpassword);{
+         if(password!=confirmpassword){
+            const notify = () => toast("password and confirm password unmatched");
+         }
+         else{
       const response= await fetch(`http://localhost:5000/api/auth/register`,{
         method:"POST",
          headers:{
@@ -107,7 +112,7 @@ const Login = () => {
         </div>
         <div className="inner_login">
           <div>
-            <h2 style={{ fontWeight: "400" }}>Sign-in</h2>
+            <h2 style={{ fontWeight: "400" }}>Register</h2>
           </div>
           <form>
             <div>

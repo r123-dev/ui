@@ -4,7 +4,7 @@ import Home from './Home'
 const dashboard = () => {
   return (
     <div>
-       <header/>
+       <Header/>
        <Home/>
     </div>
   )
