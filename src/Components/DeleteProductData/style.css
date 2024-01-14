@@ -1,0 +1,13 @@
+.BtnGroup{
+    display: flex;
+    justify-content: space-between;
+}
+.deleteHeading{
+    font-size: 1.1rem !important;
+    text-align: center;
+}
+.deleteContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

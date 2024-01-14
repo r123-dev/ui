@@ -1,0 +1,27 @@
+.btn-flex{
+    display: flex;
+    /* min-width: 100px; */
+    border: 1px solid black;
+    border-radius: 19px;
+    width: 90px;
+
+}
+
+.btn-flex div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.btn-flex button{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background: none;
+    color: black;
+    border: none;
+    font-size: 1.1rem !important ;
+}
+

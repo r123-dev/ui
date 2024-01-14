@@ -1,0 +1,50 @@
+.orders-section {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 5px 20px;
+  /* box-shadow: 2px 2px 12px rgb(211, 211, 211);  */
+}
+.orderproduct {
+  margin-bottom: 30px;
+  /* justify-content: center; */
+}
+.orderdetails {
+  /* box-shadow: 5px 5px 20px rgb(211, 211, 211); */
+  /* padding: 10px 50px;
+  border-radius: 10px; */
+  display: flex;
+}
+.orderimgcontainer {
+  max-width: 80%;
+}
+.orderimg {
+  flex: 0.2;
+}
+.orderinfo {
+  flex: 0.8;
+}
+@media screen and (max-width: 742px) {
+  .orderinfo h5 {
+    font-size: 0.9rem !important;
+  }
+  .orders h1 {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 635px) {
+  .orderimg {
+    flex: 0.25;
+  }
+  .orderinfo {
+    flex: 0.75;
+  }
+  .orderinfo h5 {
+    font-size: 0.85rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .orderinfo h5 {
+    font-size: 0.75rem !important;
+  }
+}

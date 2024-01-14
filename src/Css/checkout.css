@@ -1,0 +1,232 @@
+.image_discount {
+  /* margin-top: 1rem;
+  margin-left: 1rem; */
+  max-width: 100%;
+  min-height: 100px;
+}
+.discount_div {
+  margin: 0 30px;
+  margin-top: 30px;
+  /* margin-bottom: 10px; */
+  max-width: 900px;
+}
+.checkout {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+.product_details h5 {
+  font-size: 1.1rem;
+}
+.Checkout_left {
+  flex: 2 1 0;
+}
+.Checkout_right {
+  flex: 1 1 0;
+}
+.checkout_info {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  /* max-width: 500px; */
+  margin: 20px 15px;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: 1px 1px 40px rgb(209, 208, 208); */
+  border-radius: 19px;
+  /* flex: 1 1 0; */
+}
+.checkout_info img {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 19px;
+}
+
+.basket_right {
+  background-color: rgb(216, 216, 216);
+  box-shadow: 1px 1px 4px #fff;
+  /* min-width: 300px; */
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.basket_right div {
+  margin-left: 10px;
+  padding-bottom: 8px;
+}
+#check {
+  margin-right: 10px;
+}
+.pay {
+  margin: 10px 0;
+  /* position: relative; */
+  min-height: 30px;
+  text-align: center;
+}
+.pay button {
+  display: inline-block;
+  padding: 2px 20px;
+
+  /* width: 200px;
+  max-width: 200px; */
+}
+
+.addtobaskets button {
+  border: none;
+  /* position: absolute; */
+  left: 50%;
+  /* transform: translateX(-50%); */
+  bottom: 1px;
+  background-color: rgb(209, 143, 68);
+}
+@media screen and (max-width: 866px) {
+  .discount_div {
+    margin-top: 20px;
+    margin-left: 10px;
+    /* height: 100px !important; */
+
+    /* background-color: black; */
+  }
+  .product_details h5,
+  p {
+    font-size: 0.9rem !important;
+  }
+  .rmbtn {
+    font-size: 0.7rem !important;
+  }
+
+  .image_discount {
+    max-width: 100%;
+    /* height: 10px !important; */
+  }
+  .basket_right {
+    margin-left: 5px;
+  }
+  .checkout_info img {
+    max-width: 73% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* .checkout {
+    position: relative !important;
+  } */
+  .discount_div {
+    margin: 5px 10px;
+    /* margin-top: px;
+    margin-left: 10px; */
+    /* height: 100px !important; */
+
+    /* background-color: black; */
+  }
+  /* .Checkout_right {
+    position: absolute !important;
+    width: 200px;
+  /* } */
+  /* .basket_right {
+    width: 200px !important;
+  } */
+}
+@media screen and (max-width: 710px) {
+  .checkout_info img {
+    max-width: 85%;
+  }
+  .checkout_info {
+    padding: 10px 8px !important;
+  }
+  .img {
+    flex: 3;
+  }
+  .product_details {
+    flex: 7;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .discount_div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Checkout_right,
+  .basket_right {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 0.9rem;
+  }
+  .guest p {
+    font-size: 1rem !important;
+    margin-bottom: 5px;
+  }
+  .guest {
+    position: relative;
+  }
+  .guest hr {
+    /* position: absolute; */
+    margin-left: -20px;
+    width: 55%;
+  }
+
+  .pay button {
+    font-size: 0.8rem !important;
+    padding: 2px 5px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .checkout {
+    position: relative;
+  }
+  .img {
+    flex: 3.5 !important;
+  }
+  .product_details {
+    flex: 6.5 !important;
+  }
+  .product_details h5,
+  p {
+    font-size: 0.7rem !important;
+  }
+  .rmbtn {
+    font-size: 0.7rem;
+  }
+
+  .checkout_info img {
+    max-width: 95%;
+  }
+  .image_discount {
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+  }
+  .Checkout_right {
+    position: absolute;
+    bottom: 15px;
+    min-width: 150px !important;
+    right: 0;
+  }
+  .basket_right p {
+    margin: 3px;
+  }
+  .basket_right {
+    padding: 5px 0px !important;
+    padding-bottom: 0px;
+  }
+  .basket_right button {
+    font-size: 0.6rem !important;
+  }
+  .guest p {
+    font-size: 0.73rem !important;
+  }
+
+  .addtobaskets {
+    margin-bottom: 0px !important;
+  }
+}
+@media screen and (max-width: 1129px) {
+  .checkout_info img {
+    max-width: 65%;
+  }
+}

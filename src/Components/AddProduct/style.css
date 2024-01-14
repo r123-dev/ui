@@ -1,0 +1,20 @@
+.inputDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.btnGroup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px ;
+}
+.headerContainer{
+    position: relative;
+}
+.headerContainer .icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
