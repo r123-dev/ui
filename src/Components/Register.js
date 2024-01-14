@@ -8,7 +8,7 @@ import { NavLink, useHistory } from "react-router-dom";
 //import { useNavigate } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
-import { toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 import Register from "./Register";
 // import { notify } from "../../../server/route/userinfo";
