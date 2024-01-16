@@ -1,4 +1,8 @@
+import { useState } from "react";
+
+
 const initialState = {
+  
 
   products:[
            { className:"home_animation1",
@@ -120,9 +124,9 @@ const initialState = {
             img:"https://m.media-amazon.com/images/I/51ZTlYhF7YS._AC_UY327_FMwebp_QL65_.jpg"
 },
 
+  ]
           
-          
-],
+,
 cart:{},
 
 totalItems:0
@@ -130,6 +134,9 @@ totalItems:0
 };
 
 export const Reducer =(state = initialState, action) => {
+  
+  
+  
   console.log(action);
   if (action.type === "ADD_TO_CART") {
     if(state.cart[action.payload.id])
