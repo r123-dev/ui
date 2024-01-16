@@ -12,15 +12,17 @@ export default function Product(props) {
   const dispatch = useDispatch();
   const [isDeleteModal,setIsDeleteModal]=React.useState(false);
   
-
-  const { id, title, price, img,quantity } = props;
+   
+  const {id,
+    title,
+    price,img,quantity } = props;
   let cname = props.className;
   cname = cname + " " + "product";
   const [isEdit,setIsEdit]=useState(false);
 
-  
+  //var quantity=5;
   const onIncrement=()=>{
-    dispatch(AddToCart({ id, title, price, img }))
+    dispatch(AddToCart({ id, title, price, img ,quantity}))
   }
   const onDecrement=()=>{
     dispatch(DeleteFromCart(id))
@@ -33,7 +35,8 @@ export default function Product(props) {
   }
   return (
     <>
-    <div className={cname}>
+    <div className={cname}
+    >
       <div className="product_info">
         {/* <div className="triangle"></div> */}
         <p style={{ fontSize: "0.9rem", fontWeight: "500", margin: "2px" }}>

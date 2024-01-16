@@ -4,7 +4,12 @@ import { useState } from "react";
 const initialState = {
   
 
-  products:[
+    products:[ //       The api doesn't respond and the promise and query doesnot resolve so i created my own products showing the products 
+      //fetch('https://fakestoreapi.com/products/')
+  //  .then(response => response.json())
+  //  .then(data => console.log(data))]
+    
+   
            { className:"home_animation1",
             id:"1",
             title:'HP 15 (2021) Thin & Light Ryzen 3-3250 Laptop, 8 GB RAM, 1TB HDD, 39.62 cms (15.6") FHD Screen, Windows 10, MS Office (15s-gr0011AU)'

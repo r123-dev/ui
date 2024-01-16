@@ -17,9 +17,10 @@ function useWindowSize() {
     updateSize();
     return () => window.removeEventListener("resize", updateSize);
   }, []);
-  console.log(size);
+  
   return size;
 }
+let i=0;
 function Home() {
   const dsplay = useWindowSize();
   const [slide, setSlide] = useState("");
@@ -30,8 +31,10 @@ function Home() {
       setSlide("");
     }
   }, [dsplay]);
-  const [products,cart]=useSelector((item)=>{return([item.Reducer.products,item.Reducer.cart])})
-  console.log(products);
+  
+  const [products,cart]=useSelector((item)=>{return([item.Reducer.products,
+  item.Reducer.cart])})
+  
 
   return (
     <div className="home">
@@ -114,7 +117,11 @@ function Home() {
           </div>
         </div>
         <div className="home-product" style={{ marginTop: "-180px" }}>
-          {products?.map((item)=><Product
+          
+          {products?.map((item)=>
+            
+          <Product
+              
             className={item.className}
             id={item.id}
             title={item.title}
@@ -124,7 +131,7 @@ function Home() {
           />)}
           
 
-                 </div>
+                  </div>
       </div>
     </div>
   );
