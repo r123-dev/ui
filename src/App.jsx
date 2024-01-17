@@ -24,7 +24,7 @@ const AuthContextWrapper = ({ children }) => {
     const verify = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/auth/isValidUser`,
+          `https://tame-rose-rhinoceros-cuff.cyclic.app/api/auth/isValidUser`,
           {
             headers: {
               token: `${localStorage?.getItem("token")}`,
