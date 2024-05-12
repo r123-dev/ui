@@ -73,7 +73,7 @@ const Login = () => {
             const notify = () => toast("password and confirm password unmatched");
          }
          else{
-      const response= await fetch(`https://tame-rose-rhinoceros-cuff.cyclic.app/api/auth/register`,{
+      const response= await fetch(`http://localhost:5000/api/auth/register`,{
         method:"POST",
          headers:{
           'Content-Type':"application/json",

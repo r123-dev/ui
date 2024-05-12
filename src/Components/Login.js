@@ -42,7 +42,7 @@ const Login = () => {
     });
   };
   const send = async (e) => {
-    const response= await fetch(`https://tame-rose-rhinoceros-cuff.cyclic.app/api/auth/login`,{
+    const response= await fetch(`http://localhost:5000/auth/login`,{
       method:"POST",
        headers:{
         'Content-Type':"application/json",

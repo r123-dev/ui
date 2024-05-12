@@ -20,31 +20,31 @@ const AuthContextWrapper = ({ children }) => {
     email: "",
     userName: "",
   });
-  useEffect(() => {
-    const verify = async () => {
-      try {
-        const res = await axios.get(
-          `https://tame-rose-rhinoceros-cuff.cyclic.app/api/auth/isValidUser`,
-          {
-            headers: {
-              token: `${localStorage?.getItem("token")}`,
-            },
-          }
-        );
+  //useEffect(() => {
+  //   const verify = async () => {
+  //     try {
+  //       const res = await axios.get(
+  //         `http://localhost:5000/api/auth/isValidUser`,
+  //         {
+  //           headers: {
+  //             token: `${localStorage?.getItem("token")}`,
+  //           },
+  //         }
+  //       );
 
-        if (res.data.success) {
-          history.push("/");
-          return;
-        } else {
-          history.push("/login");
-        }
-      } catch (err) {
-        console.log(err);
-        history.push("/login");
-      }
-    };
-    verify();
-  }, []);
+  //       if (res.data.success) {
+  //         history.push("/");
+  //         return;
+  //       } else {
+  //         history.push("/login");
+  //       }
+  //     } catch (err) {
+  //       console.log(err);
+  //       history.push("/login");
+  //     }
+  //   };
+  //   verify();
+  // }, []);
   return (
     <AuthContext.Provider value={{ user: userData }}>
       {children}
@@ -56,16 +56,6 @@ function App() {
   return (
     <AuthContextWrapper>
       <Switch>
-        <Route exact path="/login">
-          {/* <Header />
-          <Home /> */}
-          <Login />
-        </Route>
-        <Route exact path="/register">
-          {/* <Header />
-          <Home /> */}
-          <Register />
-        </Route>
         <Route exact path="/">
           <Header />
           <Home />
